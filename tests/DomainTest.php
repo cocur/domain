@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * This file is part of cocur/domain.
+ *
+ * (c) Florian Eckerstorfer <florian@eckerstorfer.co>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Cocur\Domain\DomainTest;
 
 use Cocur\Domain\Domain;
@@ -7,7 +16,12 @@ use Cocur\Domain\Domain;
 /**
  * DomainTest
  *
- * @group unit
+ * @category  test
+ * @package   cocur/domain
+ * @author    Florian Eckerstorfer <florian@eckerstorfer.co>
+ * @copyright 2014 Florian Eckerstorfer
+ * @license   http://opensource.org/licenses/MIT The MIT License
+ * @group     unit
  */
 class DomainTest extends \PHPUnit_Framework_TestCase
 {
