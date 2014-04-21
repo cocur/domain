@@ -41,7 +41,7 @@ class DataLoaderTest extends \PHPUnit_Framework_TestCase
     public function load()
     {
         $data = $this->loader->load(__DIR__.'/../fixtures/tld.json');
-        $this->assertEquals('aero', $data[0]['tld']);
+        $this->assertEquals('aero', $data->getByTld('aero')['tld']);
     }
 
     /**
