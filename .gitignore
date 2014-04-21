@@ -1,0 +1,6 @@
+/build/logs/
+/vendor/
+/*.sublime-project
+/*.sublime-workspace
+/composer.lock
+/phpunit.xml
