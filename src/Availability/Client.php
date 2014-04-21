@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * This file is part of cocur/domain.
+ *
+ * (c) Florian Eckerstorfer <florian@eckerstorfer.co>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Cocur\Domain\Availability;
+
+use Cocur\Domain\Domain;
+use Cocur\Domain\Data\Data;
+use Cocur\Domain\Whois\Client as WhoisClient;
+
+/**
+ * Client
+ *
+ * @package    cocur/domain
+ * @subpackage availability
+ * @author     Florian Eckerstorfer <florian@eckerstorfer.co>
+ * @copyright  2014 Florian Eckerstorfer
+ * @license    http://opensource.org/licenses/MIT The MIT License
+ */
+class Client
+{
+    /** @var WhoisClient */
+    private $whoisClient;
+
+    /** @var Data */
+    private $data;
+
+    /**
+     * Constructor.
+     *
+     * @param WhoisClient $whoisClient
+     * @param Data        $data
+     */
+    public function __construct(WhoisClient $whoisClient, Data $data)
+    {
+        $this->whoisClient = $whoisClient;
+        $this->data = $data;
+    }
+
+    /**
+     * @return WhoisClient
+     */
+    public function getWhoisClient()
+    {
+        return $this->whoisClient;
+    }
+
+    /**
+     * @return Data
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
+     * Returns if the given domain is available.
+     *
+     * @param Domain|string  $domain Domain.
+     *
+     * @return boolean `true` if the domain is available, `false` if not.
+     */
+    public function isAvailable($domain)
+    {
+        if (false === ($domain instanceof Domain)) {
+            $domain = Domain::create($domain);
+        }
+
+        $data = $this->data->getByTld($domain->getTld());
+        if (false === isset($data['pattern']['notRegistered'])) {
+            throw new AvailabilityException(
+                sprintf('No pattern exists to check availability of %s domains.', $domain->getTld())
+            );
+        }
+
+        $whois = $this->whoisClient->query($domain);
+        if (preg_match($data['pattern']['notRegistered'], $whois)) {
+            return true;
+        }
+
+        return false;
+    }
+}

@@ -36,6 +36,12 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     /** @var Cocur\Domain\Connection\ConnectionFactory */
     private $factory;
 
+    /** @var array */
+    private $comData = [
+        'whoisServer' => 'com.whois-servers.net',
+        'pattern'     => ['quotaExceeded' => '/% Quota exceeded/']
+    ];
+
     public function setUp()
     {
         $this->factory = m::mock('Cocur\Domain\Connection\ConnectionFactory');
@@ -46,25 +52,28 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      * @covers Cocur\Domain\Whois\Client::query()
-     * @covers Cocur\Domain\Whois\Client::getTld()
      */
     public function query()
     {
+        $domain = m::mock('Cocur\Domain\Domain');
+        $domain->shouldReceive('getDomainName')->once()->andReturn('florianeckerstorfer.com');
+        $domain->shouldReceive('getTld')->once()->andReturn('com');
+
         $connection = m::mock('Cocur\Domain\Connection\ConnectionInterface');
         $connection->shouldReceive('open')->with('com.whois-servers.net', 43)->once()->andReturn($connection);
         $connection->shouldReceive('write')->with("florianeckerstorfer.com\r\n")->once()->andReturn($connection);
-        $connection->shouldReceive('read')->once()->andReturn(file_get_contents(__DIR__.'/../fixtures/whois.txt'));
+        $connection->shouldReceive('read')->once()->andReturn(file_get_contents(__DIR__.'/../fixtures/whois_reg.txt'));
         $connection->shouldReceive('close')->once();
 
         $this->data
             ->shouldReceive('getByTld')
             ->with('com')
             ->once()
-            ->andReturn(['whoisServer' => 'com.whois-servers.net']);
+            ->andReturn($this->comData);
 
         $this->factory->shouldReceive('createStreamConnection')->once()->andReturn($connection);
 
-        $result = $this->client->query('florianeckerstorfer.com');
+        $result = $this->client->query($domain);
 
         $this->assertRegExp('/Domain Name: FLORIANECKERSTORFER\.COM/', $result);
     }
@@ -98,5 +107,31 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $this->factory->shouldReceive('createStreamConnection')->once()->andReturn($connection);
 
         $this->client->query('florianeckerstorfer.com');
+    }
+
+    /**
+     * @test
+     * @covers Cocur\Domain\Whois\Client::query()
+     * @expectedException Cocur\Domain\Whois\QuotaExceededException
+     */
+    public function queryHasQuotaExceeded()
+    {
+        $domain = m::mock('Cocur\Domain\Domain');
+        $domain->shouldReceive('getDomainName')->once()->andReturn('florianeckerstorfer.com');
+        $domain->shouldReceive('getTld')->once()->andReturn('com');
+
+        $connection = m::mock('Cocur\Domain\Connection\ConnectionInterface');
+        $connection->shouldReceive('open')->andReturn($connection);
+        $connection->shouldReceive('write')->andReturn($connection);
+        $connection->shouldReceive('read')->andReturn(file_get_contents(__DIR__.'/../fixtures/whois_quota.txt'));
+        $connection->shouldReceive('close');
+
+        $this->data
+            ->shouldReceive('getByTld')
+            ->andReturn($this->comData);
+
+        $this->factory->shouldReceive('createStreamConnection')->andReturn($connection);
+
+        $this->client->query($domain);
     }
 }

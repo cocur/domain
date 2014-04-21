@@ -11,6 +11,7 @@
 
 namespace Cocur\Domain\Whois;
 
+use Cocur\Domain\Domain;
 use Cocur\Domain\Data\Data;
 use Cocur\Domain\Data\DataException;
 use Cocur\Domain\Connection\ConnectionFactory;
@@ -50,45 +51,41 @@ class Client
     /**
      * Queries the WHOIS server for the given domain name.
      *
-     * @param string $domainName Domain name.
+     * @param Domain|string $domain Domain name.
      *
      * @return string Result of the WHOIS server.
      *
      * @throws WhoisException when the TLD does not exist.
      * @throws WhoisException when the connection to the WHOIS server failed.
      */
-    public function query($domainName)
+    public function query($domain)
     {
-        $tld = $this->getTld($domainName);
+        if (false === $domain instanceof Domain) {
+            $domain = Domain::create($domain);
+        }
+        $tld = $domain->getTld();
 
         try {
-            $server = $this->data->getByTld($tld)['whoisServer'];
+            $data = $this->data->getByTld($tld);
         } catch (DataException $e) {
             throw new WhoisException(sprintf('The TLD "%s" does not exist.', $tld), 0, $e);
         }
 
         $connection = $this->factory->createStreamConnection();
         try {
-            $connection->open($server, 43);
-            $connection->write("$domainName\r\n");
-            $result = $connection->read();
+            $connection->open($data['whoisServer'], 43);
+            $connection->write(sprintf("%s\r\n", $domain->getDomainName()));
+            $whois = $connection->read();
             $connection->close();
         } catch (ConnectionException $e) {
-            throw new WhoisException(sprintf('Could not query WHOIS for "%s".', $domainName), 0, $e);
+            throw new WhoisException(sprintf('Could not query WHOIS for "%s".', $domain->getDomainName()), 0, $e);
         }
 
-        return $result;
-    }
+        if (true === isset($data['pattern']['quotaExceeded']) &&
+            preg_match($data['pattern']['quotaExceeded'], $whois)) {
+            throw new QuotaExceededException(sprintf('Quota exceeded for WHOIS server "%s".', $data['whoisServer']));
+        }
 
-    /**
-     * Returns the TLD of the given domain name.
-     *
-     * @param string $domainName Domain name.
-     *
-     * @return string TLD
-     */
-    protected function getTld($domainName)
-    {
-        return preg_replace('/(.*)\.([a-z]+)$/', '$2', $domainName);
+        return $whois;
     }
 }
