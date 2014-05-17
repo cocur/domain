@@ -1,7 +1,7 @@
 cocur/domain
 ============
 
-> Check availability of domain names and WHOIS
+> Check availability of domain names and get WHOIS information.
 
 
 Feautures
