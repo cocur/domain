@@ -55,7 +55,7 @@ class StreamConnection implements ConnectionInterface
     /**
      * Writes to the connection.
      *
-     * @param string $string
+     * @param string $string String to write to the connection.
      *
      * @return StreamConnection
      *
@@ -74,6 +74,8 @@ class StreamConnection implements ConnectionInterface
 
     /**
      * Reads from the connection.
+     *
+     * @param integer $length Number of bytes to read; if `null` all bytes are read.
      *
      * @return string Content from connection.
      *

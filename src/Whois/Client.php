@@ -57,6 +57,7 @@ class Client
      *
      * @throws WhoisException when the TLD does not exist.
      * @throws WhoisException when the connection to the WHOIS server failed.
+     * @throws QuotaExceededException if the quota for the WHOIS server is exceeded.
      */
     public function query($domain)
     {

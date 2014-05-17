@@ -35,16 +35,18 @@ class Client
     /**
      * Constructor.
      *
-     * @param WhoisClient $whoisClient
-     * @param Data        $data
+     * @param WhoisClient $whoisClient WhoisClient object
+     * @param Data        $data        Data object
      */
     public function __construct(WhoisClient $whoisClient, Data $data)
     {
         $this->whoisClient = $whoisClient;
-        $this->data = $data;
+        $this->data        = $data;
     }
 
     /**
+     * Returns the WhoisClient object.
+     *
      * @return WhoisClient
      */
     public function getWhoisClient()
@@ -53,6 +55,8 @@ class Client
     }
 
     /**
+     * Returns the Data object.
+     *
      * @return Data
      */
     public function getData()
@@ -66,6 +70,8 @@ class Client
      * @param Domain|string  $domain Domain.
      *
      * @return boolean `true` if the domain is available, `false` if not.
+     *
+     * @throws AvailabilityException when no pattern exists for the given TLD.
      */
     public function isAvailable($domain)
     {

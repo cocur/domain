@@ -25,11 +25,11 @@ class Domain
     private $domainName;
 
     /**
-     * Creates a new instance of {@see Domain}.
+     * Creates a new instance of Domain.
      *
      * @param string $domainName Domain name.
      *
-     * @return Domain
+     * @return Domain Domain object.
      */
     public static function create($domainName = null)
     {
@@ -37,6 +37,8 @@ class Domain
     }
 
     /**
+     * Constructor.
+     *
      * @param string $domainName Domain name.
      */
     public function __construct($domainName = null)
@@ -47,6 +49,8 @@ class Domain
     }
 
     /**
+     * Sets the domain name.
+     *
      * @param string $domainName Domain name.
      *
      * @return Domain
@@ -59,6 +63,8 @@ class Domain
     }
 
     /**
+     * Returns the domain name.
+     *
      * @return string Domain name.
      */
     public function getDomainName()
@@ -67,6 +73,8 @@ class Domain
     }
 
     /**
+     * Returns the TLD of the domain name.
+     *
      * @return string TLD of the domain name.
      */
     public function getTld()

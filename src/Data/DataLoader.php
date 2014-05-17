@@ -25,11 +25,11 @@ use Braincrafted\Json\Json;
 class DataLoader
 {
     /**
-     * Loads data from a JSON file and returns data as an array.
+     * Loads data from a JSON file and returns data as a Data object.
      *
-     * @param string $filename Filename
+     * @param string $filename Filename of data file.
      *
-     * @return array Data
+     * @return Data Data object.
      */
     public function load($filename)
     {
