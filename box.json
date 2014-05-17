@@ -1,0 +1,25 @@
+{
+    "alias": "whois.phar",
+    "chmod": "0755",
+    "directories": ["src"],
+    "files": [
+        "LICENSE",
+        "data/tld.json"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "kherge",
+                "phpunit",
+                "Tests",
+                "yaml"
+            ],
+            "in": "vendor"
+        }
+    ],
+    "git-version": "package_version",
+    "main": "bin/whois",
+    "output": "build/whois.phar",
+    "stub": true
+}

@@ -1,5 +1,6 @@
 /build/api
 /build/logs/
+/build/whois.phar
 /cache/
 /vendor/
 /*.sublime-project
