@@ -28,6 +28,22 @@ $ composer require cocur/domain:@dev
 
 *Currently there exists no stable release of domain.*
 
+### Download PHAR
+
+If you only want to use the command line tool to retrieve WHOIS information you can download the PHAR.
+
+```shell
+$ wget TO_DO_FILL_IN_DOWNLOAD_URL
+$ chmod +x whois.phar
+$ mv whois.phar /usr/local/bin/cwhois
+```
+
+You can now retrieve WHOIS information using Cocur Domain by executing
+
+```shell
+$ cwhois
+```
+
 
 Usage
 -----
