@@ -4,12 +4,27 @@ cocur/domain
 > Check availability of domain names and get WHOIS information.
 
 
-Feautures
----------
+Features
+--------
+
+- Check availability of domains
+- Retrieve WHOIS information of domains
 
 
 Installation
 ------------
+
+Dependending on how you want to use Domain there exist different installation methods.
+
+### Composer
+
+If you want to use the library as a dependency in your project you should use Composer to do so:
+
+```shell
+$ composer require cocur/domain:@dev
+```
+
+**Currently there exists no stable release of domain.**
 
 
 Usage
