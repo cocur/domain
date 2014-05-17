@@ -1,4 +1,6 @@
+/build/api
 /build/logs/
+/cache/
 /vendor/
 /*.sublime-project
 /*.sublime-workspace

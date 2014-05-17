@@ -23,7 +23,7 @@ namespace Cocur\Domain\Connection;
 class ConnectionFactory
 {
     /**
-     * Creates a new {@see StreamConnection}.
+     * Creates a new {@see Cocur\Domain\Connection\StreamConnection}.
      *
      * @return StreamConnection
      */
