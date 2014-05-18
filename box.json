@@ -4,16 +4,39 @@
     "directories": ["src"],
     "files": [
         "LICENSE",
-        "data/tld.json"
+        "data/tld.json",
+        "vendor/herrera-io/json/src/lib/json_version.php",
+        "vendor/herrera-io/phar-update/src/lib/constants.php",
+        "vendor/phpseclib/phpseclib/phpseclib/Crypt/Random.php"
     ],
     "finder": [
         {
             "name": "*.php",
             "exclude": [
+                "doctrine",
+                "guzzle",
+                "herrera-io",
+                "herrera-io/annotations",
+                "herrera-io/box",
+                "herrera-io/version",
+                "json-schema",
+                "jsonlint",
                 "kherge",
+                "mockery",
+                "phine",
+                "php-coveralls",
+                "php-markdown",
+                "php-parser",
+                "phpseclib"
                 "phpunit",
+                "pimple",
+                "psr",
+                "sami",
+                "sebastian",
+                "symfony",
                 "Tests",
-                "yaml"
+                "twig",
+                "yaml",
             ],
             "in": "vendor"
         }
