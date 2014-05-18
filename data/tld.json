@@ -1532,4 +1532,407 @@
     "tld": "zw",
     "description": "Zimbabwe",
     "whoisServer": null
+}, {
+    "tld": "academy",
+    "description": "Academy",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "accountants",
+    "description": "Accountants",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "actor",
+    "description": "Actor",
+    "whoisServer": "whois.unitedtld.com",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "agency",
+    "description": "Agency",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "airforce",
+    "description": "Air Force",
+    "whoisServer": "whois.unitedtld.com",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "archi",
+    "description": "Archi",
+    "whoisServer": "whois.ksregistry.net",
+    "patterns": {
+        "notRegistered": "/not found/"
+    }
+}, {
+    "tld": "associates",
+    "description": "Associates",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "audio",
+    "description": "Audio",
+    "whoisServer": "whois.uniregistry.net",
+    "patterns": {
+        "notRegistered": "/is available for registration/"
+    }
+}, {
+    "tld": "axa",
+    "description": "Axa"
+}, {
+    "tld": "bar",
+    "description": "Bar",
+    "whoisServer": "whois.nic.bar",
+    "patterns": {
+        "notRegistered": "/DOMAIN NOT FOUND./"
+    }
+}, {
+    "tld": "bargains",
+    "description": "Bargains",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "bayern",
+    "description": "Bayern",
+    "whoisServer": "whois-dub.mm-registry.com",
+    "patterns": {
+        "notRegistered": "/Status: Not Registered/"
+    }
+}, {
+    "tld": "beer",
+    "description": "Beer",
+    "whoisServer": "whois-dub.mm-registry.com",
+    "patterns": {
+        "notRegistered": "/Status: Not Registered/"
+    }
+}, {
+    "tld": "berlin",
+    "description": "Berlin",
+    "whoisServer": "whois.nic.berlin",
+    "patterns": {
+        "notRegistered": "/% No match/"
+    }
+}, {
+    "tld": "Best",
+    "description": "Best"
+}, {
+    "tld": "Bid",
+    "description": "Bid"
+}, {
+    "tld": "Bike",
+    "description": "Bike",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "Black",
+    "description": "Black",
+    "whoisServer": "whois.afilias.net",
+    "patterns": {
+        "notRegistered": "does not exist./"
+    }
+}, {
+    "tld": "blackfriday",
+    "description": "Black Friday",
+    "whoisServer": "whois.uniregistry.net",
+    "patterns": {
+        "notRegistered": "/is available for registration/"
+    }
+}, {
+    "tld": "Blue",
+    "description": "Blue",
+    "whoisServer": "whois.afilias.net",
+    "patterns": {
+        "notRegistered": "does not exist./"
+    }
+}, {
+    "tld": "boutique",
+    "description": "Boutique",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "build",
+    "description": "build",
+    "whoisServer": "whois.nic.build",
+    "patterns": {
+        "notRegistered": "/No Data Found/"
+    }
+}, {
+    "tld": "builders",
+    "description": "Builders",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "buzz",
+    "description": "Buzz"
+}, {
+    "tld": "cab",
+    "description": "Cab",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "camera",
+    "description": "Camera",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "camp",
+    "description": "Camp",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "capital",
+    "description": "Capital",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "cards",
+    "description": "Cards",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "care",
+    "description": "Care",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "career",
+    "description": "Career"
+}, {
+    "tld": "careers",
+    "description": "Careers",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "cash",
+    "description": "Cash",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "catering",
+    "description": "Catering",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "center",
+    "description": "Center",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "ceo",
+    "description": "CEO",
+    "whoisServer": "whois.nic.ceo",
+    "patterns": {
+        "notRegistered": "/Not found:/"
+    }
+}, {
+    "tld": "cheap",
+    "description": "Cheap",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "christmas",
+    "description": "Christmas",
+    "whoisServer": "whois.uniregistry.net",
+    "patterns": {
+        "notRegistered": "/is available for registration/"
+    }
+}, {
+    "tld": "church",
+    "description": "Church",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "citic",
+    "description": "Citic"
+}, {
+    "tld": "claims",
+    "description": "Claims",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "cleaning",
+    "description": "Cleaning",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "clinic",
+    "description": "Clinic",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "clothing",
+    "description": "Clothing",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "club",
+    "description": "Club",
+    "whoisServer": "whois.nic.club",
+    "patterns": {
+        "notRegistered": "/Not found:/"
+    }
+}, {
+    "tld": "codes",
+    "description": "Codes",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "coffee",
+    "description": "Coffee",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "college",
+    "description": "College",
+    "whoisServer": "whois.centralnic.com",
+    "patterns": {
+        "notRegistered": "/DOMAIN NOT FOUND/"
+    }
+}, {
+    "tld": "cologne",
+    "description": "Cologne",
+    "whoisServer": "whois-fe1.pdt.cologne.tango.knipp.de",
+    "patterns": {
+        "notRegistered": "/% no matching objects found/"
+    }
+}, {
+    "tld": "community",
+    "description": "Community",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "company",
+    "description": "Company",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "computer",
+    "description": "Computer",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "construction",
+    "description": "Construction",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "contractors",
+    "description": "Contractors",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "cooking",
+    "description": "Cooking",
+    "whoisServer": "whois-dub.mm-registry.com",
+    "patterns": {
+        "notRegistered": "/Status: Not Registered/"
+    }
+}, {
+    "tld": "cool",
+    "description": "Cool",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "country",
+    "description": "Country",
+    "whoisServer": "whois-dub.mm-registry.com",
+    "patterns": {
+        "notRegistered": "/Status: Not Registered/"
+    }
+}, {
+    "tld": "credit",
+    "description": "Credit",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "creditcard",
+    "description": "Credit Card",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "cruises",
+    "description": "Cruises",
+    "whoisServer": "whois.donuts.co",
+    "patterns": {
+        "notRegistered": "/Domain not found./"
+    }
+}, {
+    "tld": "sexy",
+    "description": "Sexy",
+    "whoisServer": "whois.uniregistry.net",
+    "patterns": {
+        "notRegistered": "/is available for registration/"
+    }
 }]
