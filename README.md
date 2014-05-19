@@ -3,6 +3,10 @@ cocur/domain
 
 > Check availability of domain names and get WHOIS information.
 
+[![Latest Stable Version](http://img.shields.io/packagist/v/cocur/domain.svg)](https://packagist.org/packages/cocur/domain)
+[![Build Status](http://img.shields.io/travis/cocur/domain.svg)](https://travis-ci.org/cocur/domain)
+[![Code Coverage](http://img.shields.io/coveralls/cocur/domain.svg)](https://coveralls.io/r/cocur/domain)
+
 
 Features
 --------
