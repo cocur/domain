@@ -13,7 +13,7 @@ before_script:
 
 script:
   - mkdir -p build/logs
-  - ./vendor/bin/phpunit -c ./
+  - ./vendor/bin/phpunit -c ./ --exclude-group functional
 
 after_script:
   - php vendor/bin/coveralls -v

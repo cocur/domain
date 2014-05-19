@@ -77,7 +77,7 @@
     "description": "individuals, by name",
     "whoisServer": "name.whois-servers.net",
     "patterns": {
-        "notRegistered": "/No match\\./"
+        "notRegistered": "/No match for/"
     }
 }, {
     "tld": "net",
@@ -144,7 +144,7 @@
     "description": "Ascension Island",
     "whoisServer": "ac.whois-servers.net",
     "patterns": {
-        "notRegistered": "/ - Available/"
+        "notRegistered": "/is available for purchase/"
     }
 }, {
     "tld": "ad",
@@ -162,7 +162,7 @@
     "description": "Afghanistan",
     "whoisServer": "af.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "ag",
@@ -210,7 +210,8 @@
     "description": "American Samoa",
     "whoisServer": "as.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Domain Not Found/"
+        "notRegistered": "/Domain Status: Available/",
+        "quotaExceeded": "/Lookup quota exceeded/"
     }
 }, {
     "tld": "at",
@@ -256,7 +257,7 @@
     "description": "Belgium",
     "whoisServer": "be.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: AVAILABLE/"
+        "notRegistered": "/Status:\\s+AVAILABLE/"
     }
 }, {
     "tld": "bf",
@@ -267,7 +268,7 @@
     "description": "Bulgaria",
     "whoisServer": "bg.whois-servers.net",
     "patterns": {
-        "notRegistered": "/%ERROR:101: no entries found/"
+        "notRegistered": "/does not exist in database!/"
     }
 }, {
     "tld": "bh",
@@ -396,7 +397,7 @@
     "description": "People's Republic of China",
     "whoisServer": "cn.whois-servers.net",
     "patterns": {
-        "notRegistered": "/no matching record no matching record/"
+        "notRegistered": "/no matching record\\./"
     }
 }, {
     "tld": "co",
@@ -426,7 +427,7 @@
     "description": "Christmas Island",
     "whoisServer": "whois.nic.cx",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "cy",
@@ -437,7 +438,8 @@
     "description": "Czech Republic",
     "whoisServer": "cz.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/no entries found/",
+        "quotaExceeded": "/Your connection limit exceeded/"
     }
 }, {
     "tld": "dd",
@@ -515,7 +517,7 @@
     "description": "European Unition",
     "whoisServer": "eu.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: AVAILABLE/"
+        "notRegistered": "/AVAILABLE/"
     }
 }, {
     "tld": "fi",
@@ -541,7 +543,7 @@
     "description": "Faroe Islands",
     "whoisServer": "fo.whois-servers.net",
     "patterns": {
-        "notRegistered": "/% No entries found in source RIPE\\./"
+        "notRegistered": "/% No entries found/"
     }
 }, {
     "tld": "fr",
@@ -578,7 +580,8 @@
     "description": "Guernsey",
     "whoisServer": "gg.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: Available/",
+        "quotaExceeded": "/Quota exceeded/"
     }
 }, {
     "tld": "gh",
@@ -596,7 +599,7 @@
     "description": "Greenland",
     "whoisServer": "whois.nic.gl",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "gm",
@@ -623,7 +626,7 @@
     "description": "South Georga and the South Sandwhich Islands",
     "whoisServer": "gs.whois-servers.net",
     "patterns": {
-        "notRegistered": "/not found\\.\\.\\./"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "gt",
@@ -642,15 +645,17 @@
     "description": "Guyana",
     "whoisServer": "gy.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "hk",
     "description": "Hong Kong",
     "whoisServer": "hk.whois-servers.net",
     "patterns": {
-        "notRegistered": "/The domain has not been registered\\./"
-    }
+        "notRegistered": "/The domain has not been registered\\./",
+        "waitPeriod": "/Please maintain at least \\d+-second time before starting another enquiry/"
+    },
+    "waitPeriod": 5
 }, {
     "tld": "hm",
     "description": "Heard Island and McDonald Islands",
@@ -658,21 +663,22 @@
 }, {
     "tld": "hn",
     "description": "Honduras",
-    "whoisServer": "hn.whois-servers.net",
+    "whoisServer": "whois.nic.hn",
     "patterns": {
-        "notRegistered": "/NOT FOUND/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "hr",
     "description": "Croatia",
-    "whoisServer": "whois.dns.hr",
+    "whoisServer": "hr.whois-servers.net",
     "patterns": {
-        "notRegistered": "/%ERROR: no entries found/"
+        "notRegistered": "/No entries found/",
+        "quotaExceeded": "/Too many requests/"
     }
 }, {
     "tld": "ht",
     "description": "Haiti",
-    "whoisServer": "ht.whois-servers.net",
+    "whoisServer": "whois.nic.ht",
     "patterns": {
         "notRegistered": "/Status: Not Registered/"
     }
@@ -699,7 +705,7 @@
     "description": "Israel",
     "whoisServer": "whois.isoc.org.il",
     "patterns": {
-        "notRegistered": "/% No data was found to match the request criteria\\./"
+        "notRegistered": "/% No data was found/"
     }
 }, {
     "tld": "im",
@@ -720,14 +726,14 @@
     "description": "British Indian Ocean Territory",
     "whoisServer": "io.whois-servers.net",
     "patterns": {
-        "notRegistered": "/ - Available/"
+        "notRegistered": "/is available for purchase/"
     }
 }, {
     "tld": "iq",
     "description": "Iraq",
     "whoisServer": "whois.cmc.iq",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "ir",
@@ -755,7 +761,8 @@
     "description": "Jersey",
     "whoisServer": "je.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: Available/",
+        "quotaExceeded": "/Quota exceeded/"
     }
 }, {
     "tld": "jm",
@@ -777,7 +784,7 @@
     "description": "Kenya",
     "whoisServer": "whois.kenic.or.ke",
     "patterns": {
-        "notRegistered": "/Status: Not registered/"
+        "notRegistered": "/Status: Not Registered/"
     }
 }, {
     "tld": "kg",
@@ -795,7 +802,7 @@
     "description": "Kiribati",
     "whoisServer": "whois.nic.ki",
     "patterns": {
-        "notRegistered": "/Domain Status: Available/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "km",
@@ -870,21 +877,24 @@
     "description": "Lithuania",
     "whoisServer": "lt.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status:   available/"
+        "notRegistered": "/Status:\\s+available/"
     }
 }, {
     "tld": "lu",
     "description": "Luxembourg",
     "whoisServer": "lu.whois-servers.net",
     "patterns": {
-        "notRegistered": "/% No such domain/"
-    }
+        "notRegistered": "/No such domain/",
+        "quotaExceeded": "/Maximum query rate reached/",
+        "waitPeriod": "/Excessive querying, grace period of \\d+ seconds/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "lv",
     "description": "Latvia",
     "whoisServer": "lv.whois-servers.net",
     "patterns": {
-        "notRegistered": "/% No entries found in source RIPE\\./"
+        "notRegistered": "/Status: free/"
     }
 }, {
     "tld": "ly",
@@ -923,7 +933,8 @@
     "description": "Madagascar",
     "whoisServer": "mg.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: Available/",
+        "quotaExceeded": "/Lookup quota exceeded/"
     }
 }, {
     "tld": "mh",
@@ -966,7 +977,8 @@
     "description": "Montserrat",
     "whoisServer": "ms.whois-servers.net",
     "patterns": {
-        "notRegistered": "/not found\\.\\.\\./"
+        "notRegistered": "/Domain Status: No Object Found/",
+        "quotaExceeded": "/Look up quota exceeded/"
     }
 }, {
     "tld": "mt",
@@ -977,7 +989,7 @@
     "description": "Mauritius",
     "whoisServer": "mu.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "mv",
@@ -992,14 +1004,15 @@
     "description": "Mexico",
     "whoisServer": "mx.whois-servers.net",
     "patterns": {
-        "notRegistered": "/No_Se_Encontro_El_Objeto\/Object_Not_Found"
+        "notRegistered": "/No_Se_Encontro_El_Objeto\\/Object_Not_Found/"
     }
 }, {
     "tld": "my",
     "description": "Malaysia",
-    "whoisServer": "whois.domainregistry.my",
+    "whoisServer": "my.whois-servers.net",
     "patterns": {
-        "notRegistered": "/does not exist in database/"
+        "notRegistered": "/does not exist in database/",
+        "quotaExceeded": "/Whois query refused\\./"
     }
 }, {
     "tld": "mz",
@@ -1010,7 +1023,7 @@
     "description": "Namibia",
     "whoisServer": "na.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "nc",
@@ -1028,14 +1041,14 @@
     "description": "Norfold Island",
     "whoisServer": "nf.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "ng",
     "description": "Nigeria",
     "whoisServer": "whois.nic.net.ng",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: Available/"
     }
 }, {
     "tld": "ni",
@@ -1046,8 +1059,10 @@
     "description": "Netherlands",
     "whoisServer": "nl.whois-servers.net",
     "patterns": {
-        "notRegistered": "/ is free/"
-    }
+        "notRegistered": "/is free/",
+        "waitPeriod": "/maximum number of requests per second exceeded/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "no",
     "description": "Norway",
@@ -1068,7 +1083,7 @@
     "description": "Niue",
     "whoisServer": "nu.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Results:\n-/"
+        "notRegistered": "/not found/"
     }
 }, {
     "tld": "nz",
@@ -1093,7 +1108,8 @@
     "description": "Peru",
     "whoisServer": "pe.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Status: Not Registered/",
+        "quotaExceeded": "/Looup quota exceeded/"
     }
 }, {
     "tld": "pf",
@@ -1164,7 +1180,7 @@
     "description": "R\u00e9union",
     "whoisServer": "re.whois-servers.net",
     "patterns": {
-        "notRegistered": "/%% No entries found in the AFNIC Database\\."
+        "notRegistered": "/%% No entries found in the AFNIC Database\\./"
     }
 }, {
     "tld": "ro",
@@ -1200,11 +1216,7 @@
     }
 }, {
     "tld": "sb",
-    "description": "Solomon Islands",
-    "whoisServer": "whois.nic.net.sb",
-    "patterns": {
-        "notRegistered": "/Status: Not Registered/"
-    }
+    "description": "Solomon Islands"
 }, {
     "tld": "sc",
     "description": "Seychelles",
@@ -1235,7 +1247,7 @@
     "description": "Saint Helena",
     "whoisServer": "sh.whois-servers.net",
     "patterns": {
-        "notRegistered": "/ - Available/"
+        "notRegistered": "/is available for purchase/"
     }
 }, {
     "tld": "si",
@@ -1253,7 +1265,7 @@
     "description": "Slovakia",
     "whoisServer": "sk.whois-servers.net",
     "patterns": {
-        "notRegistered": "/%ERROR:101: no entries found/"
+        "notRegistered": "/Not found\\./"
     }
 }, {
     "tld": "sl",
@@ -1275,7 +1287,7 @@
     "description": "Somalia",
     "whoisServer": "whois.nic.so",
     "patterns": {
-        "notRegistered": "/Not found: /"
+        "notRegistered": "/DOMAIN NOT FOUND/"
     }
 }, {
     "tld": "sr",
@@ -1316,7 +1328,7 @@
     "description": "Turks and Caicos Islands",
     "whoisServer": "whois.adamsnames.tc",
     "patterns": {
-        "notRegistered": "/not found\\.\\.\\./"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "td",
@@ -1356,14 +1368,14 @@
     "description": "East Timor",
     "whoisServer": "tl.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "tm",
     "description": "Turkmenistan",
     "whoisServer": "tm.whois-servers.net",
     "patterns": {
-        "notRegistered": "/ - Available/"
+        "notRegistered": "/is available for purchase/"
     }
 }, {
     "tld": "tn",
@@ -1417,7 +1429,7 @@
     "description": "Ukraine",
     "whoisServer": "ua.whois-servers.net",
     "patterns": {
-        "notRegistered": "/Results:\n\n%/"
+        "notRegistered": "/% No entries found for/"
     }
 }, {
     "tld": "ug",
@@ -1467,17 +1479,13 @@
     }
 }, {
     "tld": "ve",
-    "description": "Venezuele",
-    "whoisServer": "whois.nic.ve",
-    "patterns": {
-        "notRegistered": "/No match for/"
-    }
+    "description": "Venezuele"
 }, {
     "tld": "vg",
     "description": "British Virgin Islands",
     "whoisServer": "whois.adamsnames.tc",
     "patterns": {
-        "notRegistered": "/not found\\.\\.\\./"
+        "notRegistered": "/Domain Status: No Object Found/"
     }
 }, {
     "tld": "vi",
@@ -1514,7 +1522,8 @@
     "description": "Mayotte",
     "whoisServer": "yt.whois-servers.net",
     "patterns": {
-        "notRegistered": "/%% No entries found in the AFNIC Database\\./"
+        "notRegistered": "/%% No entries found in the AFNIC Database\\./",
+        "quotaExceeded": "/Too many requests/"
     }
 }, {
     "tld": "yu",
@@ -2355,13 +2364,6 @@
     "tld": "jetzt",
     "description": "Jetzt"
 }, {
-    "tld": "jobs",
-    "description": "Jobs",
-    "whoisServer": "jobswhois.verisign-grs.com",
-    "patterns": {
-        "notRegistered": "No match for/"
-    }
-}, {
     "tld": "juegos",
     "description": "Juegos",
     "whoisServer": "whois.uniregistry.net",
@@ -2970,13 +2972,6 @@
     "whoisServer": "whois.donuts.co",
     "patterns": {
         "notRegistered": "/Domain not found./"
-    }
-}, {
-    "tld": "travel",
-    "description": "Travel",
-    "whoisServer": "whois.nic.travel",
-    "patterns": {
-        "notRegistered": "/Not found:/"
     }
 }, {
     "tld": "university",

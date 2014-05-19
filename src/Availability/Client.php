@@ -32,6 +32,9 @@ class Client
     /** @var Data */
     private $data;
 
+    /** @var string */
+    private $lastWhoisResult;
+
     /**
      * Constructor.
      *
@@ -80,17 +83,23 @@ class Client
         }
 
         $data = $this->data->getByTld($domain->getTld());
-        if (false === isset($data['pattern']['notRegistered'])) {
+        if (false === isset($data['patterns']['notRegistered'])) {
             throw new AvailabilityException(
                 sprintf('No pattern exists to check availability of %s domains.', $domain->getTld())
             );
         }
 
-        $whois = $this->whoisClient->query($domain);
-        if (preg_match($data['pattern']['notRegistered'], $whois)) {
+        $this->lastWhoisResult = $this->whoisClient->query($domain);
+
+        if (preg_match($data['patterns']['notRegistered'], $this->lastWhoisResult)) {
             return true;
         }
 
         return false;
+    }
+
+    public function getLastWhoisResult()
+    {
+        return $this->lastWhoisResult;
     }
 }

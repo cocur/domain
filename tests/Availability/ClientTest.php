@@ -37,7 +37,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     private $data;
 
     /** @var array */
-    private $comData = ['pattern' => ['notRegistered' => '/No match for /']];
+    private $comData = ['patterns' => ['notRegistered' => '/No match for /']];
 
     public function setUp()
     {

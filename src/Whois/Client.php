@@ -82,9 +82,20 @@ class Client
             throw new WhoisException(sprintf('Could not query WHOIS for "%s".', $domain->getDomainName()), 0, $e);
         }
 
-        if (true === isset($data['pattern']['quotaExceeded']) &&
-            preg_match($data['pattern']['quotaExceeded'], $whois)) {
+        if (0 === strlen(trim($whois))) {
+            throw new WhoisException(sprintf('Retrieved empty WHOIS for "%s".', $domain->getDomainName()));
+        }
+
+        if (true === isset($data['patterns']['quotaExceeded']) &&
+            preg_match($data['patterns']['quotaExceeded'], $whois)) {
             throw new QuotaExceededException(sprintf('Quota exceeded for WHOIS server "%s".', $data['whoisServer']));
+        }
+        if (true === isset($data['patterns']['waitPeriod']) && 
+            true === isset($data['waitPeriod']) && 
+            preg_match($data['patterns']['waitPeriod'], $whois)) {
+            sleep($data['waitPeriod']);
+
+            return $this->query($domain);
         }
 
         return $whois;
