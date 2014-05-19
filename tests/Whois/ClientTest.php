@@ -39,7 +39,11 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     /** @var array */
     private $comData = [
         'whoisServer' => 'com.whois-servers.net',
-        'pattern'     => ['quotaExceeded' => '/% Quota exceeded/']
+        'patterns'    => [
+            'quotaExceeded' => '/% Quota exceeded/',
+            'waitPeriod'    => '/Excessive querying, grace period of \\d+ seconds/'
+        ],
+        'waitPeriod'  => 1
     ];
 
     public function setUp()
@@ -133,5 +137,63 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $this->factory->shouldReceive('createStreamConnection')->andReturn($connection);
 
         $this->client->query($domain);
+    }
+
+    /**
+     * @test
+     * @covers Cocur\Domain\Whois\Client::query()
+     * @expectedException Cocur\Domain\Whois\WhoisException
+     */
+    public function queryEmptyWhoisResult()
+    {
+        $domain = m::mock('Cocur\Domain\Domain');
+        $domain->shouldReceive('getDomainName')->once()->andReturn('florianeckerstorfer.com');
+        $domain->shouldReceive('getTld')->once()->andReturn('com');
+
+        $connection = m::mock('Cocur\Domain\Connection\ConnectionInterface');
+        $connection->shouldReceive('open')->andReturn($connection);
+        $connection->shouldReceive('write')->andReturn($connection);
+        $connection->shouldReceive('read')->andReturn("\n  \n");
+        $connection->shouldReceive('close');
+
+        $this->data
+            ->shouldReceive('getByTld')
+            ->andReturn($this->comData);
+
+        $this->factory->shouldReceive('createStreamConnection')->andReturn($connection);
+
+        $this->client->query($domain);
+    }
+
+    /**
+     * @test
+     * @covers Cocur\Domain\Whois\Client::query()
+     */
+    public function queryWaitPeriod()
+    {
+        $domain = m::mock('Cocur\Domain\Domain');
+        $domain->shouldReceive('getDomainName')->once()->andReturn('florianeckerstorfer.com');
+        $domain->shouldReceive('getTld')->once()->andReturn('com');
+
+        $connection = m::mock('Cocur\Domain\Connection\ConnectionInterface');
+        $connection->shouldReceive('open')->twice()->andReturn($connection);
+        $connection->shouldReceive('write')->twice()->andReturn($connection);
+        $connection
+            ->shouldReceive('read')
+            ->once()
+            ->andReturn(file_get_contents(__DIR__.'/../fixtures/whois_period.txt'));
+        $connection
+            ->shouldReceive('read')
+            ->once()
+            ->andReturn(file_get_contents(__DIR__.'/../fixtures/whois_reg.txt'));
+        $connection->shouldReceive('close')->twice();
+
+        $this->data
+            ->shouldReceive('getByTld')
+            ->andReturn($this->comData);
+
+        $this->factory->shouldReceive('createStreamConnection')->andReturn($connection);
+
+        $this->assertRegExp('/Domain Name: FLORIANECKERSTORFER\.COM/', $this->client->query($domain));
     }
 }

@@ -70,9 +70,12 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      * @covers Cocur\Domain\Availability\Client::isAvailable()
+     * @covers Cocur\Domain\Availability\Client::getLastWhoisResult()
      */
     public function isAvailableReturnsTrue()
     {
+        $whoisResult = file_get_contents(__DIR__.'/../fixtures/whois_notreg.txt');
+
         $domain = m::mock('Cocur\Domain\Domain');
         $domain->shouldReceive('getTld')->once()->andReturn('com');
 
@@ -81,9 +84,10 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             ->shouldReceive('query')
             ->with($domain)
             ->once()
-            ->andReturn(file_get_contents(__DIR__.'/../fixtures/whois_notreg.txt'));
+            ->andReturn($whoisResult);
 
         $this->assertTrue($this->client->isAvailable($domain));
+        $this->assertEquals($whoisResult, $this->client->getLastWhoisResult());
     }
 
     /**
@@ -92,6 +96,8 @@ class ClientTest extends \PHPUnit_Framework_TestCase
      */
     public function isAvailableReturnsFalse()
     {
+        $whoisResult = file_get_contents(__DIR__.'/../fixtures/whois_reg.txt');
+
         $domain = m::mock('Cocur\Domain\Domain');
         $domain->shouldReceive('getTld')->once()->andReturn('com');
 
@@ -100,9 +106,10 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             ->shouldReceive('query')
             ->with($domain)
             ->once()
-            ->andReturn(file_get_contents(__DIR__.'/../fixtures/whois_reg.txt'));
+            ->andReturn($whoisResult);
 
         $this->assertFalse($this->client->isAvailable($domain));
+        $this->assertEquals($whoisResult, $this->client->getLastWhoisResult());
     }
 
     /**

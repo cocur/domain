@@ -1,4 +1,5 @@
 /build/api
+/build/coverage/
 /build/logs/
 /build/whois.phar
 /cache/

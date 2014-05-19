@@ -16,6 +16,7 @@ use Cocur\Domain\Connection\ConnectionFactory;
 use Cocur\Domain\Data\DataLoader;
 use Cocur\Domain\Whois\Client;
 use Cocur\Domain\Whois\WhoisException;
+use Cocur\Domain\Whois\QuotaExceededException;
 
 if ($_SERVER['argc'] < 2) {
     echo "Usage: php whois.php DOMAIN_NAME\n";
@@ -40,6 +41,13 @@ try {
         throw new \Exception('Could not perform WHOIS request.', 0, $e);
     } else {
         echo "Could not perform WHOIS request:\n";
+        echo "> ".$e->getMessage()."\n";
+    }
+} catch (QuotaExceededException $e) {
+    if (true === $verbose) {
+        throw new \Exception('Quota exceeded for WHOIS server.', 0, $e);
+    } else {
+        echo "Quota exceeded for WHOIS request:\n";
         echo "> ".$e->getMessage()."\n";
     }
 }

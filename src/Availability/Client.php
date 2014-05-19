@@ -98,6 +98,11 @@ class Client
         return false;
     }
 
+    /**
+     * Returns the WHOIS result from the last call to `isAvailable()`.
+     *
+     * @return string WHOIS result
+     */
     public function getLastWhoisResult()
     {
         return $this->lastWhoisResult;

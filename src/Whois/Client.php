@@ -90,8 +90,8 @@ class Client
             preg_match($data['patterns']['quotaExceeded'], $whois)) {
             throw new QuotaExceededException(sprintf('Quota exceeded for WHOIS server "%s".', $data['whoisServer']));
         }
-        if (true === isset($data['patterns']['waitPeriod']) && 
-            true === isset($data['waitPeriod']) && 
+        if (true === isset($data['patterns']['waitPeriod']) &&
+            true === isset($data['waitPeriod']) &&
             preg_match($data['patterns']['waitPeriod'], $whois)) {
             sleep($data['waitPeriod']);
 
