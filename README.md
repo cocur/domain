@@ -9,6 +9,7 @@ Features
 
 - Check availability of domains
 - Retrieve WHOIS information of domains
+- Support for over 350 TLDs, including new generic TLDs like `.coffee` or `.sexy`
 - Command line tool and library
 - Compatible with PHP >= 5.4 and [HHVM](http://hhvm.com)
 
@@ -100,7 +101,7 @@ echo $client->isAvailable($domainName);
 Changelog
 ---------
 
-### Version 0.1 (*not yet released*)
+### Version 0.1 (19 May 2014)
 
 - Initial release
 
