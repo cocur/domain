@@ -397,8 +397,10 @@
     "description": "People's Republic of China",
     "whoisServer": "cn.whois-servers.net",
     "patterns": {
-        "notRegistered": "/no matching record\\./"
-    }
+        "notRegistered": "/no matching record\\./",
+        "waitPeriod": "/Queried interval is too short/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "co",
     "description": "Colombia",
@@ -1546,35 +1548,41 @@
     "description": "Academy",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "accountants",
     "description": "Accountants",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "actor",
     "description": "Actor",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "agency",
     "description": "Agency",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "airforce",
     "description": "Air Force",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "archi",
@@ -1588,8 +1596,10 @@
     "description": "Associates",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "audio",
     "description": "Audio",
@@ -1605,15 +1615,17 @@
     "description": "Bar",
     "whoisServer": "whois.nic.bar",
     "patterns": {
-        "notRegistered": "/DOMAIN NOT FOUND./"
+        "notRegistered": "/DOMAIN NOT FOUND/"
     }
 }, {
     "tld": "bargains",
     "description": "Bargains",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "bayern",
     "description": "Bayern",
@@ -1636,24 +1648,26 @@
         "notRegistered": "/% No match/"
     }
 }, {
-    "tld": "Best",
+    "tld": "best",
     "description": "Best"
 }, {
-    "tld": "Bid",
+    "tld": "bid",
     "description": "Bid"
 }, {
-    "tld": "Bike",
+    "tld": "bike",
     "description": "Bike",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "black",
     "description": "Black",
-    "whoisServer": "whois.afilias.net",
+    "whoisServer": "whois.nic.black",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "blackfriday",
@@ -1663,19 +1677,21 @@
         "notRegistered": "/is available for registration/"
     }
 }, {
-    "tld": "Blue",
+    "tld": "blue",
     "description": "Blue",
-    "whoisServer": "whois.afilias.net",
+    "whoisServer": "whois.nic.blue",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "boutique",
     "description": "Boutique",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "build",
     "description": "build",
@@ -1688,8 +1704,10 @@
     "description": "Builders",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "buzz",
     "description": "Buzz"
@@ -1698,43 +1716,55 @@
     "description": "Cab",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "camera",
     "description": "Camera",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "camp",
     "description": "Camp",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "capital",
     "description": "Capital",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "cards",
     "description": "Cards",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "care",
     "description": "Care",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "career",
     "description": "Career"
@@ -1743,29 +1773,37 @@
     "description": "Careers",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "cash",
     "description": "Cash",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "catering",
     "description": "Catering",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "center",
     "description": "Center",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "ceo",
     "description": "CEO",
@@ -1778,8 +1816,10 @@
     "description": "Cheap",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "christmas",
     "description": "Christmas",
@@ -1792,8 +1832,10 @@
     "description": "Church",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "citic",
     "description": "Citic"
@@ -1802,29 +1844,37 @@
     "description": "Claims",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "cleaning",
     "description": "Cleaning",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "clinic",
     "description": "Clinic",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "clothing",
     "description": "Clothing",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "club",
     "description": "Club",
@@ -1837,15 +1887,19 @@
     "description": "Codes",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "coffee",
     "description": "Coffee",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "college",
     "description": "College",
@@ -1865,36 +1919,46 @@
     "description": "Community",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "company",
     "description": "Company",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "computer",
     "description": "Computer",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "construction",
     "description": "Construction",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "contractors",
     "description": "Contractors",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "cooking",
     "description": "Cooking",
@@ -1907,8 +1971,10 @@
     "description": "Cool",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "country",
     "description": "Country",
@@ -1921,50 +1987,60 @@
     "description": "Credit",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "creditcard",
     "description": "Credit Card",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "cruises",
     "description": "Cruises",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "dance",
     "description": "Dance",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "dating",
     "description": "Dating",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "democrat",
     "description": "Democrat",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "dental",
     "description": "Dental",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "desi",
     "description": "Desi",
@@ -1977,120 +2053,154 @@
     "description": "Diamonds",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "digital",
     "description": "Digital",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "directory",
     "description": "Directory",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "discount",
     "description": "Discount",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "domains",
     "description": "Domains",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
-    "tld": "eduction",
-    "description": "Eduction",
+    "tld": "education",
+    "description": "Education",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "email",
     "description": "Email",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "engineering",
     "description": "Engineering",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "enterprises",
     "description": "Enterprises",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "equipment",
     "description": "Equipment",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "estate",
     "description": "Estate",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "events",
     "description": "Events",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "exchange",
     "description": "Exchange",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "expert",
     "description": "Expert",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "exposed",
     "description": "Exposed",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "fail",
     "description": "Fail",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "farm",
     "description": "Farm",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "feedback",
     "description": "Feedback",
@@ -2103,22 +2213,28 @@
     "description": "Finance",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "financial",
     "description": "Financial",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "fish",
     "description": "Fish",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "fishing",
     "description": "Fishing",
@@ -2131,22 +2247,28 @@
     "description": "Fitness",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "flights",
     "description": "Flights",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "florist",
     "description": "Florist",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "foo",
     "description": "Foo",
@@ -2159,8 +2281,10 @@
     "description": "Foundation",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "frogans",
     "description": "Frogans",
@@ -2173,21 +2297,25 @@
     "description": "Fund",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "furniture",
     "description": "Furniture",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "futbol",
     "description": "Futbol",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "gal",
@@ -2201,8 +2329,10 @@
     "description": "Gallery",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "gift",
     "description": "Gift",
@@ -2215,8 +2345,10 @@
     "description": "Glass",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "globo",
     "description": "Globo",
@@ -2232,36 +2364,44 @@
     "description": "Gop",
     "whoisServer": "whois-dub.mm-registry.com",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/No match for/"
     }
 }, {
     "tld": "graphics",
     "description": "Graphics",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "gratis",
     "description": "Gratis",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "gripe",
     "description": "Gripe",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "guide",
     "description": "Guide",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "guitars",
     "description": "Guitars",
@@ -2274,14 +2414,16 @@
     "description": "Guru",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "haus",
     "description": "Haus",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "hiphop",
@@ -2295,15 +2437,19 @@
     "description": "Holdings",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "holiday",
     "description": "Holiday",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "horse",
     "description": "Horse",
@@ -2316,50 +2462,62 @@
     "description": "House",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "immobilien",
     "description": "Immobilien",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "industries",
     "description": "Industries",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "institute",
     "description": "Institute",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "insure",
     "description": "Insure",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "international",
     "description": "International",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "investments",
     "description": "Investments",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "jetzt",
     "description": "Jetzt"
@@ -2375,22 +2533,24 @@
     "description": "Kaufen",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "kim",
     "description": "Kim",
     "whoisServer": "whois.afilias.net",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "kitchen",
     "description": "Kitchen",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "kiwi",
     "description": "Kiwi",
@@ -2403,7 +2563,7 @@
     "description": "Koeln",
     "whoisServer": "whois-fe1.pdt.cologne.tango.knipp.de",
     "patterns": {
-        "notRegistered": "/% no matching objects found/"
+        "notRegistered": "/no matching objects found/"
     }
 }, {
     "tld": "kred",
@@ -2413,43 +2573,55 @@
     "description": "Land",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "lease",
     "description": "Lease",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "life",
     "description": "Life",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "lighting",
     "description": "Lighting",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "limited",
     "description": "Limited",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "limo",
     "description": "Limo",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "link",
     "description": "Link",
@@ -2462,14 +2634,16 @@
     "description": "Loans",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "london",
     "description": "London",
     "whoisServer": "whois-dub.mm-registry.com",
     "patterns": {
-        "notRegistered": "/Status: Not Registered/"
+        "notRegistered": "/No match for/"
     }
 }, {
     "tld": "luxe",
@@ -2490,8 +2664,10 @@
     "description": "Management",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "mango",
     "description": "Mango",
@@ -2504,21 +2680,25 @@
     "description": "Marketing",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "media",
     "description": "Media",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "meet",
     "description": "Meet",
-    "whoisServer": "whois.afilias.net",
+    "whoisServer": "whois.nic.meet",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "menu",
@@ -2539,7 +2719,7 @@
     "description": "Moda",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "moe",
@@ -2556,7 +2736,7 @@
     "description": "Moscow",
     "whoisServer": "whois.nic.moscow",
     "patterns": {
-        "notRegistered": "/No Data Found/"
+        "notRegistered": "/No entries found for/"
     }
 }, {
     "tld": "nagoya",
@@ -2569,7 +2749,7 @@
     "description": "Ninja",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "nyc",
@@ -2596,15 +2776,19 @@
     "description": "Partners",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "parts",
     "description": "Parts",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "photo",
     "description": "Photo",
@@ -2617,15 +2801,19 @@
     "description": "Photography",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "photos",
     "description": "Photos",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "pics",
     "description": "Pics",
@@ -2638,22 +2826,26 @@
     "description": "pictures",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "pink",
     "description": "Pink",
     "whoisServer": "whois.afilias.net",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "plumbing",
     "description": "Pluming",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "post",
     "description": "Post",
@@ -2666,21 +2858,25 @@
     "description": "Productions",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "properties",
     "description": "Properties",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "pub",
     "description": "Pub",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "qpon",
@@ -2697,22 +2893,26 @@
     "description": "Recipes",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "red",
     "description": "Red",
     "whoisServer": "whois.afilias.net",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "reisen",
     "description": "Reisen",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "ren",
     "description": "Ren"
@@ -2721,22 +2921,28 @@
     "description": "Rentals",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "repair",
     "description": "Repair",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "report",
     "description": "Report",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "rest",
     "description": "Rest",
@@ -2749,7 +2955,7 @@
     "description": "Reviews",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "rich",
@@ -2763,7 +2969,7 @@
     "description": "Rocks",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "rodeo",
@@ -2794,15 +3000,19 @@
     "description": "Schule",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "services",
     "description": "Services",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "sexy",
     "description": "Sexy",
@@ -2815,28 +3025,32 @@
     "description": "Shiksha",
     "whoisServer": "whois.afilias.net",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "shoes",
     "description": "Shoes",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "singles",
     "description": "Singles",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "social",
     "description": "Social",
     "whoisServer": "whois.unitedtld.com",
     "patterns": {
-        "notRegistered": "/Domain not found./"
+        "notRegistered": "/Domain not found\\./"
     }
 }, {
     "tld": "sohu",
@@ -2846,15 +3060,19 @@
     "description": "Solar",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "solutions",
     "description": "Solutions",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "soy",
     "description": "Soy",
@@ -2867,36 +3085,46 @@
     "description": "Supplies",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "supply",
     "description": "Supply",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "support",
     "description": "Support",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "surgery",
     "description": "Surgery",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "systems",
     "description": "Systems",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "tattoo",
     "description": "Tattoo",
@@ -2909,36 +3137,46 @@
     "description": "Tax",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "technology",
     "description": "Technology",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "tienda",
     "description": "Tienda",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "tips",
     "description": "Tips",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "today",
     "description": "Today",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "tokyo",
     "description": "Tokyo"
@@ -2947,22 +3185,28 @@
     "description": "Tools",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "town",
     "description": "Town",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "toys",
     "description": "Toys",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "trade",
     "description": "Trade"
@@ -2971,15 +3215,19 @@
     "description": "Training",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "university",
     "description": "University",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "uno",
     "description": "Uno"
@@ -2988,12 +3236,14 @@
     "description": "Vacations",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "vegas",
     "description": "Las Vegas",
-    "whoisServer": "whois.afilias-srs.net",
+    "whoisServer": "whois.nic.vegas",
     "patterns": {
         "notRegistered": "/NOT FOUND/"
     }
@@ -3002,36 +3252,37 @@
     "description": "Ventures",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "viajes",
     "description": "Viajes",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "villas",
     "description": "Villas",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "vision",
     "description": "Vision",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
-}, {
-    "tld": "vision",
-    "description": "Vision",
-    "whoisServer": "whois.donuts.co",
-    "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "vodka",
     "description": "Vodka",
@@ -3042,9 +3293,9 @@
 }, {
     "tld": "vote",
     "description": "Vote",
-    "whoisServer": "whois.afilias.net",
+    "whoisServer": "whois.nic.vote",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "voting",
@@ -3056,17 +3307,19 @@
 }, {
     "tld": "voto",
     "description": "voto",
-    "whoisServer": "whois.afilias.net",
+    "whoisServer": "whois.nic.voto",
     "patterns": {
-        "notRegistered": "/does not exist./"
+        "notRegistered": "/NOT FOUND/"
     }
 }, {
     "tld": "voyage",
     "description": "Voyage",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "wang",
     "description": "Wang",
@@ -3079,8 +3332,10 @@
     "description": "Watch",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "webcam",
     "description": "Webcam"
@@ -3110,8 +3365,10 @@
     "description": "Works",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "wtc",
     "description": "World Trade Centers",
@@ -3124,8 +3381,10 @@
     "description": "WTF",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }, {
     "tld": "xyz",
     "description": "XYZ",
@@ -3141,6 +3400,8 @@
     "description": "Zone",
     "whoisServer": "whois.donuts.co",
     "patterns": {
-        "notRegistered": "/Domain not found./"
-    }
+        "notRegistered": "/Domain not found\\./",
+        "waitPeriod": "/Your request is being rate limited. Please reduce the frequency of your requests and try again later/"
+    },
+    "waitPeriod": 1
 }]
