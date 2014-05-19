@@ -34,7 +34,7 @@ $ composer require cocur/domain:@dev
 If you only want to use the command line tool to retrieve WHOIS information you can download the PHAR.
 
 ```shell
-$ wget TO_DO_FILL_IN_DOWNLOAD_URL
+$ wget https://github.com/cocur/domain/releases/download/v0.1/whois.phar
 $ chmod +x whois.phar
 $ mv whois.phar /usr/local/bin/cwhois
 ```
