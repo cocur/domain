@@ -555,6 +555,13 @@
         "notRegistered": "/%% No entries found in the AFNIC Database\\./"
     }
 }, {
+    "tld": "frl",
+    "description": "Friesland",
+    "whoisServer": "whois.nic.frl",
+    "patterns": {
+        "notRegistered": "/Status:\\s+AVAILABLE/"
+    }
+}, {
     "tld": "ga",
     "description": "Gabon",
     "whoisServer": null
