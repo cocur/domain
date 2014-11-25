@@ -104,6 +104,7 @@ class AvailabilityCheckTest extends \PHPUnit_Framework_TestCase
             [ 'nic.fi', false ], [ 'nicabcdefgh.fi', true ],
             [ 'nic.fo', false ], [ 'nicabcdefgh.fo', true ],
             [ 'nic.fr', false ], [ 'nicabcdefgh.fr', true ],
+            [ 'nic.frl', false ], [ 'nicabcdefgh.frl', true ],
             [ 'nic.gd', false ], [ 'nicabcdefgh.gd', true ],
             [ 'nic.gg', false ], [ 'nicabcdefgh.gg', true ],
             [ 'nic.gl', false ], [ 'nicabcdefgh.gl', true ],
