@@ -53,6 +53,7 @@ class AvailabilityCheckTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [ 'nic.aero', false ], [ 'nicabcdefgh.aero', true ],
+            [ 'nic.amsterdam', false ], [ 'nicabcdefgh.amsterdam', true ],
             [ 'nic.asia', false ], [ 'nicabcdefgh.asia', true ],
             [ 'nic.biz', false ], [ 'nicabcdefgh.biz', true ],
             [ 'nic.cat', false ], [ 'nicabcdefgh.cat', true ],
