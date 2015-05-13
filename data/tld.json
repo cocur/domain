@@ -6,6 +6,15 @@
         "notRegistered": "/NOT FOUND/"
     }
 }, {
+    "tld": "amsterdam",
+    "description": "Amsterdam",
+    "whoisServer": "whois.nic.amsterdam",
+    "patterns": {
+        "notRegistered": "/Status: free/",
+        "waitPeriod": "/maximum number of requests per second exceeded/"
+    },
+    "waitPeriod": 1
+}, {
     "tld": "asia",
     "description": "Asia-Pacific region",
     "whoisServer": "asia.whois-servers.net",
