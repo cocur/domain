@@ -12,7 +12,7 @@ $versions = GitVersionCollection::create($dir)
 
 return new Sami($dir, array(
     'title'                => 'Domain API',
-    'theme'                => 'enhanced',
+    'theme'                => 'default',
     'versions'             => $versions,
     'build_dir'            => __DIR__.'/build/api/%version%',
     'cache_dir'            => __DIR__.'/cache/api/%version%',
