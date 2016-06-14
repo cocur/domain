@@ -501,7 +501,7 @@
     "description": "Estonia",
     "whoisServer": "ee.whois-servers.net",
     "patterns": {
-        "notRegistered": "/% No entries found\\./"
+        "notRegistered": "/Domain not found/"
     }
 }, {
     "tld": "eg",
