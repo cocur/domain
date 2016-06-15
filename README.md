@@ -105,6 +105,12 @@ echo $client->isAvailable($domainName);
 Changelog
 ---------
 
+### Verison 0.2 (15 June 2016)
+
+- [#1](https://github.com/cocur/domain/pull/1) Add `.frl` TLD (by [rskuipers](https://github.com/rskuipers))
+- [#3](https://github.com/cocur/domain/pull/3) Add `.amsterdam` TLD (by [rskuipers](https://github.com/rskuipers))
+- [#4](https://github.com/cocur/domain/pull/4) Fix pattern for `.ee` (by [huglester](https://github.com/huglester))
+
 ### Version 0.1 (19 May 2014)
 
 - Initial release
