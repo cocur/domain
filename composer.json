@@ -18,7 +18,6 @@
     "require-dev": {
         "phpunit/phpunit":        "~4.0",
         "mockery/mockery":        "~0.9",
-        "satooshi/php-coveralls": "dev-master",
         "seld/jsonlint":          "~1.1",
         "sami/sami":              "~3.0",
         "kherge/box":             "~2.4"
